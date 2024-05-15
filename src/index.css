@@ -1,0 +1,145 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  /* Does not add padding or border to the specified width of elements */
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('assets/icons/fonts/icomoon.eot?3f8bb4');
+  src:  url('assets/icons/fonts/icomoon.eot?3f8bb4#iefix') format('embedded-opentype'),
+  url('assets/icons/fonts/icomoon.ttf?3f8bb4') format('truetype'),
+  url('assets/icons/fonts/icomoon.woff?3f8bb4') format('woff'),
+  url('assets/icons/fonts/icomoon.svg?3f8bb4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rocket-ship:before {
+  content: "\e900";
+}
+.icon-moon .path1:before {
+  content: "\e901";
+  color: rgb(127, 138, 152);
+}
+.icon-moon .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(221, 226, 242);
+}
+.icon-moon .path3:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(127, 138, 152);
+}
+.icon-moon .path4:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(195, 203, 221);
+}
+.icon-moon .path5:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(195, 203, 221);
+}
+.icon-moon .path6:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(132, 139, 155);
+}
+.icon-moon .path7:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(195, 203, 221);
+}
+.icon-moon .path8:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(109, 116, 134);
+}
+.icon-moon .path9:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(132, 139, 155);
+}
+.icon-moon .path10:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(109, 116, 134);
+}
+.icon-moon .path11:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(95, 104, 117);
+}
+.icon-moon .path12:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(40, 66, 104);
+}
+.icon-moon .path13:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(40, 66, 104);
+}
+.icon-moon .path14:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(40, 66, 104);
+}
+.icon-moon .path15:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(40, 66, 104);
+}
+.icon-moon .path16:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(40, 66, 104);
+}
+
