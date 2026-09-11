@@ -6,21 +6,16 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "browserslist": {
     "production": [
@@ -35,6 +30,10 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.7"
+    "@vitejs/plugin-react": "^4.3.4",
+    "babel-plugin-styled-components": "^1.10.7",
+    "jsdom": "^25.0.1",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
   }
 }
