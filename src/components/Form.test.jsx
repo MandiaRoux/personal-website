@@ -15,6 +15,19 @@ function fillForm() {
   return view;
 }
 
+test('shows inline errors for required fields and offers timeline and engagement choices', () => {
+  const view = render(<Form />);
+
+  fireEvent.submit(view.getByRole('form'));
+
+  expect(view.getByRole('alert')).toHaveTextContent('Please check the highlighted fields');
+  expect(view.getByText('Please enter your name.')).toBeInTheDocument();
+  expect(view.getByText('Please enter an email address so I can reply.')).toBeInTheDocument();
+  expect(view.getByText('Please share a short outline of your project.')).toBeInTheDocument();
+  expect(view.getByLabelText(/Timeline/).querySelectorAll('option')).toHaveLength(5);
+  expect(view.getByLabelText(/Engagement/).querySelectorAll('option')).toHaveLength(6);
+});
+
 test('confirms an accepted enquiry and clears the form', async () => {
   const fetchMock = vi.fn().mockResolvedValue({ ok: true });
   vi.stubGlobal('fetch', fetchMock);
